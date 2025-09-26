@@ -168,16 +168,18 @@ export const ProjectManager: React.FC<ProjectManagerProps> = ({
       display: 'flex',
       flexDirection: 'column',
       height: '100vh',
-      backgroundColor: '#f5f5f5',
+      backgroundColor: '#f8f9fa',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif',
     }}>
       {/* Header */}
       <div style={{
-        padding: '16px',
+        padding: '20px',
         backgroundColor: '#fff',
-        borderBottom: '1px solid #ddd',
+        borderBottom: '3px solid #333',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
       }}>
         <h1 style={{ margin: 0, fontSize: '24px', fontWeight: 'bold' }}>
           {project.title}
@@ -186,12 +188,16 @@ export const ProjectManager: React.FC<ProjectManagerProps> = ({
           <button
             onClick={addLevel}
             style={{
-              padding: '8px 16px',
+              padding: '12px 24px',
               backgroundColor: '#007bff',
               color: 'white',
               border: 'none',
-              borderRadius: '4px',
+              borderRadius: '8px',
               cursor: 'pointer',
+              fontSize: '14px',
+              fontWeight: '600',
+              boxShadow: '0 2px 4px rgba(0, 123, 255, 0.3)',
+              transition: 'all 0.2s ease',
             }}
           >
             Add Level
@@ -200,13 +206,13 @@ export const ProjectManager: React.FC<ProjectManagerProps> = ({
       </div>
 
       {/* Main Content */}
-      <div style={{ flex: 1, padding: '16px' }}>
+      <div style={{ flex: 1, padding: '20px', backgroundColor: '#f8f9fa' }}>
         <MusicalFormEditor
           project={project}
           state={state}
           events={events}
-          width={1200}
-          height={600}
+          width={1400}
+          height={1000}
         />
       </div>
 

@@ -31,8 +31,12 @@ export const TrackComponent: React.FC<TrackComponentProps> = ({
     position: 'relative',
     width: `${trackWidth}px`,
     height: `${trackHeight}px`,
-    borderBottom: '1px solid #e0e0e0',
+    borderBottom: '2px solid #e0e0e0',
     backgroundColor: '#fafafa',
+    borderRadius: '4px',
+    marginBottom: '4px',
+    padding: '8px',
+    boxSizing: 'border-box',
   };
 
   return (
@@ -66,6 +70,7 @@ export const TrackComponent: React.FC<TrackComponentProps> = ({
           isHovered={hoveredBlockId === block.id}
           onClick={onBlockSelect}
           onHover={onBlockHover}
+          parentBlock={null}
         />
       ))}
     </div>

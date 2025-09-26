@@ -25,9 +25,9 @@ export const MusicalFormEditor: React.FC<MusicalFormEditorProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Calculate measures per pixel based on zoom
-  const measuresPerPixel = 20 * state.zoom;
-  const trackHeight = 40;
-  const timelineHeight = 30;
+  const measuresPerPixel = 15 * state.zoom;
+  const trackHeight = 120;
+  const timelineHeight = 50;
   const levelLabelWidth = 120;
 
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
@@ -71,9 +71,11 @@ export const MusicalFormEditor: React.FC<MusicalFormEditorProps> = ({
     width: `${width}px`,
     height: `${height}px`,
     overflow: 'hidden',
-    border: '1px solid #ccc',
-    backgroundColor: '#ffffff',
+    border: '2px solid #333',
+    backgroundColor: '#f8f9fa',
     cursor: isDragging ? 'grabbing' : 'grab',
+    borderRadius: '8px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
   };
 
   const contentStyle: React.CSSProperties = {

@@ -40,8 +40,11 @@ export const LevelComponent: React.FC<LevelComponentProps> = ({
     position: 'relative',
     width: `${levelWidth}px`,
     height: `${levelHeight}px`,
-    borderBottom: '2px solid #333',
+    borderBottom: '3px solid #333',
     backgroundColor: isCollapsed ? '#f0f0f0' : '#ffffff',
+    marginBottom: '8px',
+    borderRadius: '4px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   };
 
   return (

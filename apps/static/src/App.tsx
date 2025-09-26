@@ -29,7 +29,7 @@ const sampleProject: FormProject = {
               "levelId": "L0",
               "trackId": "T0",
               "span": { "start": { "measure": 1 }, "end": { "measure": 36 } },
-              "labels": { "tr": "E major" },
+              "labels": { "center": "Standard 4-part band", "tr": "E major", "tl": "m1–36" },
               "style": { "fill": { "r": 249, "g": 241, "b": 199, "a": 0.9 }, "cornerRadius": 20 },
               "isExpanded": true,
               "children": [
@@ -39,8 +39,8 @@ const sampleProject: FormProject = {
                   "levelId": "L1",
                   "trackId": "T0-0",
                   "span": { "start": { "measure": 1 }, "end": { "measure": 4 } },
-                  "labels": { "tl": "m1–4" },
-                  "style": { "fill": { "r": 255, "g": 159, "b": 28, "a": 0.85 } }
+                  "labels": { "center": "Intro", "tl": "m1–4" },
+                  "style": { "fill": { "r": 255, "g": 159, "b": 28, "a": 0.85 }, "cornerRadius": 16 }
                 },
                 {
                   "id": "B-chorus1",
@@ -48,8 +48,8 @@ const sampleProject: FormProject = {
                   "levelId": "L1",
                   "trackId": "T0-0",
                   "span": { "start": { "measure": 5 }, "end": { "measure": 20 } },
-                  "labels": { "tl": "m5–20" },
-                  "style": { "fill": { "r": 205, "g": 230, "b": 208, "a": 0.7 } },
+                  "labels": { "center": "Chorus 1", "tl": "m5–20" },
+                  "style": { "fill": { "r": 205, "g": 230, "b": 208, "a": 0.7 }, "cornerRadius": 16 },
                   "children": [
                     {
                       "id": "B-verse1",
@@ -57,8 +57,8 @@ const sampleProject: FormProject = {
                       "levelId": "L2",
                       "trackId": "T0-0",
                       "span": { "start": { "measure": 5 }, "end": { "measure": 12 } },
-                      "labels": { "tl": "m5–12", "bl": "[first lyric]" },
-                      "style": { "fill": { "r": 193, "g": 219, "b": 254, "a": 0.9 } }
+                      "labels": { "center": "Verse 1", "tl": "m5–12", "bl": "[first lyric]" },
+                      "style": { "fill": { "r": 193, "g": 219, "b": 254, "a": 0.9 }, "cornerRadius": 12 }
                     },
                     {
                       "id": "B-refrain1",
@@ -66,8 +66,8 @@ const sampleProject: FormProject = {
                       "levelId": "L2",
                       "trackId": "T0-0",
                       "span": { "start": { "measure": 13 }, "end": { "measure": 20 } },
-                      "labels": { "tl": "m13–20" },
-                      "style": { "fill": { "r": 243, "g": 201, "b": 201, "a": 0.9 } }
+                      "labels": { "center": "Refrain", "tl": "m13–20" },
+                      "style": { "fill": { "r": 243, "g": 201, "b": 201, "a": 0.9 }, "cornerRadius": 12 }
                     }
                   ]
                 },
@@ -77,8 +77,8 @@ const sampleProject: FormProject = {
                   "levelId": "L1",
                   "trackId": "T0-0",
                   "span": { "start": { "measure": 21 }, "end": { "measure": 36 } },
-                  "labels": { "tl": "m21–36" },
-                  "style": { "fill": { "r": 205, "g": 230, "b": 208, "a": 0.7 } },
+                  "labels": { "center": "Chorus 2", "tl": "m21–36" },
+                  "style": { "fill": { "r": 205, "g": 230, "b": 208, "a": 0.7 }, "cornerRadius": 16 },
                   "children": [
                     {
                       "id": "B-verse2",
@@ -86,8 +86,8 @@ const sampleProject: FormProject = {
                       "levelId": "L2",
                       "trackId": "T0-0",
                       "span": { "start": { "measure": 21 }, "end": { "measure": 28 } },
-                      "labels": { "tl": "m21–28", "bl": "[first lyric]" },
-                      "style": { "fill": { "r": 193, "g": 219, "b": 254, "a": 0.9 } }
+                      "labels": { "center": "Verse 2", "tl": "m21–28", "bl": "[first lyric]" },
+                      "style": { "fill": { "r": 193, "g": 219, "b": 254, "a": 0.9 }, "cornerRadius": 12 }
                     },
                     {
                       "id": "B-refrain2",
@@ -95,12 +95,22 @@ const sampleProject: FormProject = {
                       "levelId": "L2",
                       "trackId": "T0-0",
                       "span": { "start": { "measure": 29 }, "end": { "measure": 36 } },
-                      "labels": { "tl": "m29–36" },
-                      "style": { "fill": { "r": 243, "g": 201, "b": 201, "a": 0.9 } }
+                      "labels": { "center": "Refrain", "tl": "m29–36" },
+                      "style": { "fill": { "r": 243, "g": 201, "b": 201, "a": 0.9 }, "cornerRadius": 12 }
                     }
                   ]
                 }
               ]
+            },
+            {
+              "id": "B-bridge",
+              "name": "Bridge",
+              "levelId": "L0",
+              "trackId": "T0",
+              "span": { "start": { "measure": 37 }, "end": { "measure": 44 } },
+              "labels": { "center": "Bridge", "tr": "C major", "tl": "m37–44", "bl": "[Guitar solo]" },
+              "style": { "fill": { "r": 200, "g": 180, "b": 220, "a": 0.8 }, "cornerRadius": 20 },
+              "isExpanded": true
             },
             {
               "id": "B-top-2",
@@ -108,7 +118,7 @@ const sampleProject: FormProject = {
               "levelId": "L0",
               "trackId": "T0",
               "span": { "start": { "measure": 45 }, "end": { "measure": 80 } },
-              "labels": { "tr": "E major", "tl": "m45–End" },
+              "labels": { "center": "Band + Horns", "tr": "E major", "tl": "m45–End" },
               "style": { "fill": { "r": 249, "g": 241, "b": 199, "a": 0.9 }, "cornerRadius": 20 },
               "isExpanded": true,
               "children": [
@@ -118,8 +128,8 @@ const sampleProject: FormProject = {
                   "levelId": "L1",
                   "trackId": "T0-1",
                   "span": { "start": { "measure": 45 }, "end": { "measure": 80 } },
-                  "labels": { "tl": "m45–End" },
-                  "style": { "fill": { "r": 205, "g": 230, "b": 208, "a": 0.7 } },
+                  "labels": { "center": "Chorus 3", "tl": "m45–End" },
+                  "style": { "fill": { "r": 205, "g": 230, "b": 208, "a": 0.7 }, "cornerRadius": 16 },
                   "children": [
                     {
                       "id": "B-verse3",
@@ -127,8 +137,8 @@ const sampleProject: FormProject = {
                       "levelId": "L2",
                       "trackId": "T0-1",
                       "span": { "start": { "measure": 45 }, "end": { "measure": 52 } },
-                      "labels": { "tl": "m45–52", "bl": "[first lyric]" },
-                      "style": { "fill": { "r": 193, "g": 219, "b": 254, "a": 0.9 } }
+                      "labels": { "center": "Verse 3", "tl": "m45–52", "bl": "[first lyric]" },
+                      "style": { "fill": { "r": 193, "g": 219, "b": 254, "a": 0.9 }, "cornerRadius": 12 }
                     },
                     {
                       "id": "B-refrain3",
@@ -136,8 +146,8 @@ const sampleProject: FormProject = {
                       "levelId": "L2",
                       "trackId": "T0-1",
                       "span": { "start": { "measure": 53 }, "end": { "measure": 60 } },
-                      "labels": { "tl": "m53–60" },
-                      "style": { "fill": { "r": 243, "g": 201, "b": 201, "a": 0.9 } }
+                      "labels": { "center": "Refrain", "tl": "m53–60" },
+                      "style": { "fill": { "r": 243, "g": 201, "b": 201, "a": 0.9 }, "cornerRadius": 12 }
                     },
                     {
                       "id": "B-refrain4",
@@ -145,8 +155,8 @@ const sampleProject: FormProject = {
                       "levelId": "L2",
                       "trackId": "T0-1",
                       "span": { "start": { "measure": 61 }, "end": { "measure": 68 } },
-                      "labels": { "tl": "m61–68" },
-                      "style": { "fill": { "r": 243, "g": 201, "b": 201, "a": 0.9 } }
+                      "labels": { "center": "Refrain", "tl": "m61–68" },
+                      "style": { "fill": { "r": 243, "g": 201, "b": 201, "a": 0.9 }, "cornerRadius": 12 }
                     },
                     {
                       "id": "B-fade",
@@ -154,7 +164,7 @@ const sampleProject: FormProject = {
                       "levelId": "L2",
                       "trackId": "T0-1",
                       "span": { "start": { "measure": 69 }, "end": { "measure": 80 } },
-                      "labels": { "tl": "m69–End" },
+                      "labels": { "center": "Repeat to fade", "tl": "m69–End" },
                       "style": { "fill": { "r": 237, "g": 83, "b": 80, "a": 0.85 }, "cornerRadius": 24 }
                     }
                   ]
