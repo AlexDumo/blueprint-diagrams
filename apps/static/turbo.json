@@ -1,0 +1,15 @@
+{
+    "extends": ["//"],
+    "tasks": {
+        "dev": {
+            "with": [
+                "@blueprint-diagrams/canvas#dev",
+            ],
+            "persistent": true,
+            "cache": false
+        },
+        "build": {
+            "dependsOn": ["^build"]
+        }
+    }
+}

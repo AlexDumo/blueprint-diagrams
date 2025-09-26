@@ -1,0 +1,54 @@
+{
+  "name": "@blueprint-diagrams/canvas",
+  "version": "0.1.0",
+  "description": "A React canvas component for blueprint diagrams",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "canvas",
+    "blueprint",
+    "diagram",
+    "component"
+  ],
+  "author": "",
+  "license": "AGPL-3.0",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blueprint-diagrams/blueprint-diagrams.git",
+    "directory": "packages/canvas"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
